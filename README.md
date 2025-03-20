@@ -5,3 +5,4 @@ Avery B, Devin Perry, Jes Crouch, Kevin Dinh, Sankalp Amaravadi
 # Roles
 Sankalp Amaravadi- Back end and documentation <br />
 Devin Perry- Security and Authentication <br />
+Avery B- Testing and QA <br />
