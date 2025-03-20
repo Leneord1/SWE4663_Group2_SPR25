@@ -1,3 +1,3 @@
-# SWE4663_Group2_SPR25
+# SWE 4663 Spring 2025 Group 2 
 # Team Members: 
 Avery B, Devin Perry, Jes Crouch, Kevin Dinh
