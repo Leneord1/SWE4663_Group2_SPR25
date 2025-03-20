@@ -3,3 +3,4 @@
 Avery B, Devin Perry, Jes Crouch, Kevin Dinh
 # Roles
 Sankalp Amaravadi- Back end
+Devin Perry- Security and Authentication
