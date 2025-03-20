@@ -2,5 +2,5 @@
 # Team Members: 
 Avery B, Devin Perry, Jes Crouch, Kevin Dinh
 # Roles
-Sankalp Amaravadi- Back end__
+Sankalp Amaravadi- Back end <br />
 Devin Perry- Security and Authentication
