@@ -1,6 +1,7 @@
+## REMEMBER TO DOCUMENT EVERYTHING
 # SWE 4663 Spring 2025 Group 2 
-# Team Members: 
+# Team Member
 Avery B, Devin Perry, Jes Crouch, Kevin Dinh
 # Roles
-Sankalp Amaravadi- Back end <br />
-Devin Perry- Security and Authentication
+Sankalp Amaravadi- Back end and documentation <br />
+Devin Perry- Security and Authentication <br />
