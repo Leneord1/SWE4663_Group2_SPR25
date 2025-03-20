@@ -1,3 +1,4 @@
+//Kinda useless at the moment, working on implementing this into the driver.  
 import java.util.Scanner;
 
 class quadFormula {
