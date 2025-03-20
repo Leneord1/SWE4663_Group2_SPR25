@@ -6,7 +6,9 @@ Avery B, Devin Perry, Jes Crouch, Kevin Dinh, Sankalp Amaravadi
 Sankalp Amaravadi- Back end and documentation <br />
 Devin Perry- Security and Authentication <br />
 Avery B- Testing and QA <br />
-#EXPLANATION
+Kevin Dinh- UI/Database management- is doing both <br />
+Jes Crouch- UI/Database management- is doing both 
+# EXPLANATION
 Calculator.java, <br />
 driver.java, <br />
 quadFormula.java are all examples for the code and level of documentation expected out of this project and are to be deleted as more of the code for this project are completed.  
