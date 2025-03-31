@@ -31,13 +31,13 @@ public class MenuController  {
         try {
             switch (buttonID) {
                 case "insertButton":
-                    // Add custom behavior for button1
+                    // Add behavior for Choose Project
                     break;
                 case "viewDeleteButton":
-                    // Add custom behavior for button2
+                    // Add behavior for Project Overview
                     break;
                 case "analyzeButton":
-                    // Add custom behavior for button1
+                    // Add behavior for Project Risks
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
                     Pane root = loader.load();
 
@@ -50,7 +50,11 @@ public class MenuController  {
                     Stage currentStage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
                     currentStage.close();
                     break;
+                case "Project Risks":
+                    //Adds behaviors for showing the project risks
+                    break;
                 case "exitButton":
+                    //behavior for exiting the program
                     javafx.application.Platform.exit();
                     break;
                 default:
