@@ -14,9 +14,10 @@
       <font>
          <Font name="Comic Sans MS Bold Italic" size="19.0" />
       </font></Label>
-    <Button fx:id="insertButton" onAction="#onMenuButtonClick" text="Insert Variables" />
-    <Button fx:id="viewDeleteButton" onAction="#onMenuButtonClick" text="View/delete Variables" />
-    <Button fx:id="analyzeButton" onAction="#onMenuButtonClick" text="Analyze it" />
+    <Button fx:id="insertButton" onAction="#onMenuButtonClick" text="Choose Project" />
+    <Button fx:id="insertButton" onAction="#onMenuButtonClick" text="Project Overview" />
+    <Button fx:id="viewDeleteButton" onAction="#onMenuButtonClick" text="Project Risks" />
+    <Button fx:id="analyzeButton" onAction="#onMenuButtonClick" text="Project Team" />
     <Button fx:id="exitButton" onAction="#onMenuButtonClick" text="Exit Application" />
     <Label fx:id="underText" prefHeight="242.0" prefWidth="200.0" textAlignment="CENTER"/>
 
