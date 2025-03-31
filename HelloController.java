@@ -21,10 +21,13 @@ public class HelloController {
 
     public void onHelloPress(ActionEvent event) throws Exception{
         try{
+            //Sets the pane
             underText.setText("Button Pressed");
+            //Update to show login screen once thats on
             FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
             Pane root = loader.load();
 
+            //Sets the text within the pane and preps for another page to open
             Scene newScene = new Scene(root);
             Stage newStage = new Stage();
             newStage.setTitle("New Window");
