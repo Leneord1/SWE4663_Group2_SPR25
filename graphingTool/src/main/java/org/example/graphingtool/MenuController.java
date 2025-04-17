@@ -25,54 +25,65 @@ public class MenuController  {
     }
     @FXML
     private void onMenuButtonClick(ActionEvent event) {
+package org.example.graphingtool;
+
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+public class MenuController {
+
+    @FXML
+    private Label menuText;
+
+    @FXML
+    private void initialize() {
+        menuText.setText("Welcome!");
+    }
+
+    @FXML
+    private void onMenuButtonClick(ActionEvent event) {
         Button sourceButton = (Button) event.getSource();
         String buttonID = sourceButton.getId();
 
         try {
             switch (buttonID) {
                 case "searchButton":
-                    searchProject();
+                    loadScene("Project.fxml", event);
                     break;
                 case "statusButton":
-                    showProjectStatus();
+                    loadScene("Project.fxml", event);
                     break;
                 case "hoursButton":
-                    showResourceUsage();
+                    loadScene("hoursTracker.fxml", event);
                     break;
                 case "bugsButton":
-                    showBugTracker();
+                    loadScene("Bug.fxml", event);
                     break;
                 case "exitButton":
-                    javafx.application.Platform.exit();
+                    Platform.exit();
                     break;
                 default:
-                    System.out.println("You broke the rules");
+                    System.out.println("Invalid button action.");
                     break;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    private void searchProject() {
-        System.out.println("Prompting user to search for a project...");
-        // Open search dialog or filter project list
+
+    private void loadScene(String fxmlFile, ActionEvent event) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+        Pane root = loader.load();
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.setTitle("New Window");
     }
-
-    private void showProjectStatus() {
-        System.out.println("Displaying project status...");
-        // Load FXML for status window or update labels dynamically
-    }
-
-    private void showResourceUsage() {
-        System.out.println("Showing resource usage and time sheets...");
-        // Fetch data from database or display resource allocation screen
-    }
-
-    private void showBugTracker() {
-        System.out.println("Opening bug tracker...");
-        // Load bug tracker FXML or display bug list dynamically
-    }
-
-
 }
 
