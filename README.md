@@ -18,6 +18,7 @@ Jes Crouch- UI/Database management- is doing both
 - Add functionality to add/remove users from projects <br />
 - Add user roles <br />
 - Better UI/UX- functions, but isn't pretty  <br />
+- Refactor to update the name to reflect project <br />
 - LAST THING TO DO: Create an executable File <br />
 # EXPLANATION
 The test login information is <br />
