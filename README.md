@@ -10,10 +10,18 @@ Kevin Dinh- UI/Database management- is doing both <br />
 Jes Crouch- UI/Database management- is doing both 
 # THINGS LEFT TO DO
 - Update authentication logic with authentication systems  <br />
-- UI  <br />
-- Bug database and references  <br />
-- Project database and getting it to work with the project database  <br />
+- We need to get the program to work with the required databases  <br />
+- Add functionality to send/receive data from databases  <br />
+- Add a function to allow the user to press the Enter button to enter information <br />
+- Add function to add/remove projects <br />
+- Add ability to see and adjust project milestones <br />
+- Add functionality to add/remove users from projects <br />
+- Add user roles <br />
+- Better UI/UX- functions, but isn't pretty  <br />
+- LAST THING TO DO: Create an executable File <br />
 # EXPLANATION
 The test login information is <br />
 username: admin <br />
-password: 1234
+password: 1234 <br />
+Access for the backend files:  graphingTool/src/main/java/org/example/graphingtool <br />
+Access for the frontend files:  graphingTool/src/main/resources/org/example/graphingtool
