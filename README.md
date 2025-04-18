@@ -21,8 +21,12 @@ Jes Crouch- UI/Database management- is doing both
 - Refactor to update the name to reflect project <br />
 - LAST THING TO DO: Create an executable File <br />
 # EXPLANATION
-The test login information is <br />
+The test login for the account information is <br />
+**ADMIN ACCOUNT** <br />
 username: admin <br />
+password: 1234 <br />
+**EMPLOYEE ACCOUNT**<br />
+username: emp12 <br />
 password: 1234 <br />
 Access for the backend files:  graphingTool/src/main/java/org/example/graphingtool <br />
 Access for the frontend files:  graphingTool/src/main/resources/org/example/graphingtool
