@@ -3,7 +3,7 @@
 # Team Members
 Avery B, Devin Perry, Jes Crouch, Kevin Dinh, Sankalp Amaravadi
 # Roles
-Sankalp Amaravadi- Back end and documentation <br />
+Sankalp Amaravadi (Project Manager)- Back end and documentation <br />
 Devin Perry- Security and Authentication <br />
 Avery B- Testing and QA <br />
 Kevin Dinh- UI/Database management- is doing both <br />
