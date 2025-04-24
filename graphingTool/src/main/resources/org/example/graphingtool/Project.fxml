@@ -14,4 +14,5 @@
     <ListView fx:id="projectList"/>
 
     <Label fx:id="projectStatus" text="Project Status" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+    <ListView fx:id = "onProjectSelected"/>
 </VBox>
