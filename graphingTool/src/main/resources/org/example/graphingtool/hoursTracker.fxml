@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.graphingtool.HoursTrackerController" spacing="10" alignment="CENTER">
-    <Label text="Hours Tracker" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
-    <Button fx:id="backButton" text="Back to Menu" onAction="#goToMainMenu"/>
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="600.0" spacing="12.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.graphingtool.HoursTrackerController">
+    <Label alignment="CENTER" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Hours Tracker">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Separator prefWidth="200.0" />
+    <Button fx:id="backButton" onAction="#goToMainMenu" text="Back to Menu" />
 
-    <DatePicker fx:id="workDatePicker"/>
-    <TextField fx:id="hoursField" promptText="Enter hours worked"/>
-    <TextField fx:id="projectField" promptText="Enter Project ID"/>
-    <Button fx:id="submitButton" text="Submit" onAction="#submitHours"/>
+    <DatePicker fx:id="workDatePicker" />
+    <TextField fx:id="hoursField" promptText="Enter hours worked" />
+    <TextField fx:id="projectField" promptText="Enter Project ID" />
+    <Button fx:id="submitButton" onAction="#submitHours" text="Submit" />
+   <Separator prefWidth="200.0" />
 
-    <Label text="Logged Hours"/>
-    <ListView fx:id="hoursList"/>
+    <Label contentDisplay="CENTER" style="-fx-font-weight: bold;" text="Logged Hours">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+    <ListView fx:id="hoursList">
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+      <VBox.margin>
+         <Insets bottom="10.0" />
+      </VBox.margin>
+   </ListView>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
 
 
 </VBox>
