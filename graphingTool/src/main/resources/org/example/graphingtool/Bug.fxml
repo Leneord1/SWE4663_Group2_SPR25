@@ -1,20 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.graphingtool.BugController" spacing="10" alignment="CENTER">
-    <Label text="Bug Tracking" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
-    <Button fx:id="backButton" text="Back to Menu" onAction="#goToMainMenu"/>
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.graphingtool.BugController">
+    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Bug Tracking" />
+    <Button fx:id="backButton" onAction="#goToMainMenu" text="Back to Menu" />
 
-    <Label text="Unpatched Bugs"/>
-    <ListView fx:id="unpatchedBugsList"/>
+    <Label text="Unpatched Bugs" />
+    <Accordion>
+        <panes>
+            <TitledPane animated="false" text="No visual feedback">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: When clicking a &quot;Submit&quot; button, there is no visual feedback" wrappingWidth="300.0" />
+                            <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity: Low" />
+                            <Text layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: In progress" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </TitledPane>
+            <TitledPane animated="false" text="No warning for empty field">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: When submitting hours logged or project search, there is not error message for an empty field" wrappingWidth="300.0" />
+                            <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity: Medium" />
+                            <Text layoutX="14.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Unpatched" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </TitledPane>
+            <TitledPane animated="false" text="Hours field uncleared">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: When submitting hours logged, the text field does not clear after submitting " wrappingWidth="300.0" />
+                            <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity: Low " />
+                            <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staus: Unpatched" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </TitledPane>
+        </panes>
+    </Accordion>
+    <ListView fx:id="unpatchedBugsList" />
 
-    <Label text="Patched Bugs"/>
-    <ListView fx:id="patchedBugsList"/>
+    <Label text="Patched Bugs" />
+    <Accordion>
+        <panes>
+            <TitledPane animated="false" text="Submit Button Unresponsive">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description:  Clicking the &quot;Submit&quot; button would not trigger any actions." wrappingWidth="300.0" />
+                            <Text layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity: Low " wrappingWidth="306.13671875" />
+                            <Text layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Patched " wrappingWidth="294.384765625" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </TitledPane>
+            <TitledPane animated="false" text="No error message for negative/ zero hours logged.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: User was able to enter a negative, or 0 amount of hours logged, and no error message appeared." wrappingWidth="300.0" />
+                            <Text layoutX="12.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity: Medium " />
+                            <Text layoutX="12.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Patched" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </TitledPane>
+            <TitledPane animated="false" text="&quot;Back to Menu&quot; button did not return to correct screen">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                            <Text layoutX="14.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: When the &quot;Back to Menu&quot; button was pressed, it did not switch to the correct screen." wrappingWidth="300.0" />
+                            <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Severity: High" />
+                            <Text layoutX="14.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status: Patched" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </TitledPane>
+        </panes>
+    </Accordion>
+    <ListView fx:id="patchedBugsList" />
 
-    <Label text="Patch Notes"/>
-    <TextArea fx:id="patchNotes" prefRowCount="4" editable="false"/>
+    <Label text="Patch Notes" />
+    <TextArea fx:id="patchNotes" editable="false" prefRowCount="4" text="- Added more visual feedback to submit buttons &#10;- Hours will no longer accept negative or 0 hours logged &#10;- Special Characters are now prevented from being entered" />
 
 
 
