@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.example.graphingtool.BugController">
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.graphingtool.BugController">
     <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Bug Tracking" />
     <Button fx:id="backButton" onAction="#goToMainMenu" text="Back to Menu" />
 
@@ -52,7 +52,7 @@
             </TitledPane>
         </panes>
     </Accordion>
-    <ListView fx:id="unpatchedBugsList" />
+    <ListView fx:id="unpatchedBugsList" prefHeight="700.0" prefWidth="600.0" />
 
     <Label text="Patched Bugs" />
     <Accordion>
