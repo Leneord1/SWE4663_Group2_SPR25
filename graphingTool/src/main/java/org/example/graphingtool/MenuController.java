@@ -39,6 +39,9 @@ public class MenuController {
                 case "bugsButton":
                     loadScene("Bug.fxml", event);
                     break;
+                case "RisksButton":
+                    loadScene("Risks.fxml", event);
+                    break;
                 case "exitButton":
                     Platform.exit();
                     break;
@@ -51,11 +54,17 @@ public class MenuController {
         }
     }
 
-    private void loadScene(String fxmlFile, ActionEvent event) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
-        Pane root = loader.load();
-        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.setTitle("New Window");
+    public void loadScene(String sceneName, ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(sceneName));
+            Pane root = loader.load();
+
+            Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.setTitle("New View");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
+
 }
