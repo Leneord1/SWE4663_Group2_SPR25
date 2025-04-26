@@ -21,6 +21,7 @@
     <Button fx:id="statusButton" onAction="#onMenuButtonClick" prefWidth="200.0" text="Project Status" />
     <Button fx:id="hoursButton" onAction="#onMenuButtonClick" prefWidth="200.0" text="Project Resources" />
     <Button fx:id="bugsButton" onAction="#onMenuButtonClick" prefWidth="200.0" text="Project Bugs" />
+    <Button fx:id="RisksButton" onAction="#onMenuButtonClick" prefWidth="200.0" text="Project Risks" />
     <Button fx:id="exitButton" alignment="CENTER" onAction="#onMenuButtonClick" style="-fx-background-color: #a9a9a9; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 6;" text="Exit Application" />
 
 </VBox>
