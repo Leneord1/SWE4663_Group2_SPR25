@@ -8,18 +8,6 @@ Devin Perry- Security and Authentication <br />
 Avery B- Testing and QA <br />
 Kevin Dinh- UI/Database management- is doing both <br />
 Jes Crouch- UI/Database management- is doing both 
-# THINGS LEFT TO DO
-- Update authentication logic with authentication systems  <br />
-- We need to get the program to work with the required databases  <br />
-- Add functionality to send/receive data from databases  <br />
-- Add a function to allow the user to press the Enter button to enter information <br />
-- Add function to add/remove projects <br />
-- Add ability to see and adjust project milestones <br />
-- Add functionality to add/remove users from projects <br />
-- Add user roles <br />
-- Better UI/UX- functions, but isn't pretty  <br />
-- Refactor to update the name to reflect project <br />
-- LAST THING TO DO: Create an executable File <br />
 # EXPLANATION
 The test login for the account information is <br />
 **ADMIN ACCOUNT** <br />
@@ -29,4 +17,6 @@ password: 1234 <br />
 username: emp12 <br />
 password: 1234 <br />
 Access for the backend files:  graphingTool/src/main/java/org/example/graphingtool <br />
-Access for the frontend files:  graphingTool/src/main/resources/org/example/graphingtool
+Access for the frontend files:  graphingTool/src/main/resources/org/example/graphingtool <br />
+**HOW TO ACCESS THE SOFTWARE** <br />
+Download the graphingTool directory, parse through the file to get to the main.java file in the backend files.  This is the code that launches the software.  The login that allows access to everything is the admin account.  The Employee class login has the same level of access due to complications in creating the databases.  This will be explained within the Presentation
